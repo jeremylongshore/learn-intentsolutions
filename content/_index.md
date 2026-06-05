@@ -1,6 +1,8 @@
 ---
-title: "Learn — Intent Solutions"
+title: "Learn"
 date: 2026-06-05
 ---
 
-Landing page content is composed by `layouts/index.html`. This file exists so Hugo treats the home page as a renderable page.
+Personal study notes. Things I'm learning, the way I learn them — short, opinionated, with the gotchas I hit. Public because someone else might find them useful, but the audience is me later.
+
+## Topics

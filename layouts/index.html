@@ -1,80 +1,22 @@
-{{ define "title" }}Learning hub for Claude Code & AI systems — Intent Solutions{{ end }}
-
-{{ define "schema" }}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "{{ .Site.Params.org.url }}#org",
-      "name": "{{ .Site.Params.org.name }}",
-      "url": "{{ .Site.Params.org.url }}",
-      "founder": {
-        "@type": "Person",
-        "name": "{{ .Site.Params.author }}",
-        "url": "https://jeremylongshore.com"
-      },
-      "sameAs": [
-        "https://github.com/jeremylongshore",
-        "https://jeremylongshore.com",
-        "https://startaitools.com"
-      ]
-    },
-    {
-      "@type": "WebSite",
-      "@id": "{{ .Site.BaseURL }}#website",
-      "url": "{{ .Site.BaseURL }}",
-      "name": "{{ .Site.Title }}",
-      "description": "{{ .Site.Params.description }}",
-      "publisher": { "@id": "{{ .Site.Params.org.url }}#org" }
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What's the difference between the Learn page and Colab?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Learn is for self-serve resources — guides, plugins, blog posts, open source. Colab is for paid, time-boxed engagements where Jeremy works directly with your team."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Where do I find Claude Code plugins?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "claudecodeplugins.io is the registry; the source repo is github.com/jeremylongshore/claude-code-plugins. Featured skills are at tonsofskills.com."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can I hire Jeremy for a project?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes — engagement intake is at intentsolutions.io/colab. Partner deliverables live behind authenticated URLs at partners.intentsolutions.io."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What if I'm not technical?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Start at intentsolutions.io/learn — the founder coaching track covers AI adoption without code. The Learn With Jeremy program is designed for non-engineering decision makers."
-          }
-        }
-      ]
-    }
-  ]
-}
-</script>
-{{ end }}
-
 {{ define "main" }}
-  {{ partial "hero.html" . }}
-  {{ partial "role-triage.html" . }}
-  {{ partial "property-cards.html" . }}
-  {{ partial "featured.html" . }}
-  {{ partial "faq.html" . }}
+<article class="prose">
+  <header class="page-header">
+    <h1>Learn.</h1>
+    <p class="page-lede">{{ .Site.Params.description }}</p>
+  </header>
+
+  {{ .Content }}
+
+  <ul class="topic-list">
+    {{ range where .Site.Sections "Section" "!=" "" }}
+      <li>
+        <a href="{{ .RelPermalink }}">
+          <span class="topic-title">{{ .Title }}</span>
+          {{ with .Description }}<span class="topic-desc">{{ . }}</span>{{ end }}
+          <span class="topic-count">{{ len .Pages }} note{{ if ne (len .Pages) 1 }}s{{ end }}</span>
+        </a>
+      </li>
+    {{ end }}
+  </ul>
+</article>
 {{ end }}

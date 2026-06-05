@@ -1,11 +1,20 @@
 baseURL = "https://learn.intentsolutions.io/"
 defaultContentLanguage = "en"
-title = "Learn — Intent Solutions"
+title = "Learn"
 
 disableKinds = ["taxonomy", "term"]
 
 [markup.goldmark.renderer]
   unsafe = true
+
+[markup.highlight]
+  style = "monokai"
+  noClasses = false
+  lineNos = false
+
+[markup.tableOfContents]
+  startLevel = 2
+  endLevel = 4
 
 [outputs]
   home = ["HTML"]
@@ -13,18 +22,20 @@ disableKinds = ["taxonomy", "term"]
   page = ["HTML"]
 
 [params]
-  description = "Learning hub for Claude Code, agent-native development, and AI systems. Find the right resource in seconds — guides, plugins, blog, open source, and partner work from Jeremy Longshore."
+  description = "Jeremy Longshore's personal study notes — AWS, cloud, ops, and whatever else lands on the reading list."
   author = "Jeremy Longshore"
-  ogImage = "/img/og-image.png"
-  twitterHandle = "@jeremylongshore"
-  contactEmail = "jeremy@intentsolutions.io"
-
-[params.org]
-  name = "Intent Solutions"
-  url = "https://intentsolutions.io"
-  logo = "https://intentsolutions.io/logo.png"
 
 [languages.en]
   weight = 1
   languageName = "English"
   languageCode = "en-us"
+
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "AWS"
+  url = "/aws/"
+  weight = 10

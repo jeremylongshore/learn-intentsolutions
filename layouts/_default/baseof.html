@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="index, follow">
 
-  <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
-  <meta name="description" content="{{ .Site.Params.description }}">
+  <title>{{ block "title" . }}{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} — {{ .Site.Title }}{{ end }}{{ end }}</title>
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
   <meta name="author" content="{{ .Site.Params.author }}">
 
   <link rel="canonical" href="{{ .Permalink }}">
@@ -14,20 +14,6 @@
 
   {{ $css := resources.Get "css/main.css" | resources.Minify | resources.Fingerprint }}
   <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
-
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="{{ .Site.Title }}">
-  <meta property="og:description" content="{{ .Site.Params.description }}">
-  <meta property="og:url" content="{{ .Permalink }}">
-  <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Site.Params.ogImage }}">
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="{{ .Site.Params.twitterHandle }}">
-  <meta name="twitter:title" content="{{ .Site.Title }}">
-  <meta name="twitter:description" content="{{ .Site.Params.description }}">
-  <meta name="twitter:image" content="{{ .Site.BaseURL }}{{ .Site.Params.ogImage }}">
-
-  {{ block "schema" . }}{{ end }}
 
   <link rel="preconnect" href="https://rsms.me/">
   <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
@@ -37,16 +23,16 @@
 
   <header class="site-header">
     <div class="container">
-      <a href="/" class="brand">Intent Solutions <span class="brand-slash">/</span> Learn</a>
+      <a href="/" class="brand">learn<span class="brand-dim">.intentsolutions.io</span></a>
       <nav aria-label="Primary">
-        <a href="#triage">Where to start</a>
-        <a href="#properties">Properties</a>
-        <a href="#faq">FAQ</a>
+        {{ range .Site.Menus.main }}
+          <a href="{{ .URL }}"{{ if $.IsMenuCurrent "main" . }} class="active"{{ end }}>{{ .Name }}</a>
+        {{ end }}
       </nav>
     </div>
   </header>
 
-  <main id="main">
+  <main id="main" class="container">
     {{ block "main" . }}{{ end }}
   </main>
 

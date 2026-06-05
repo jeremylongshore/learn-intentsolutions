@@ -1,0 +1,59 @@
+name: Deploy
+
+# Push to main → CI → Tailscale OIDC → SSH to intentsolutions VPS →
+# /usr/local/sbin/deploy-learn-intentsolutions (force-command on the deploy key)
+# does git fetch + hugo build → smoke-test passes.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  id-token: write   # required for Tailscale OIDC
+
+concurrency:
+  group: deploy-vps-${{ github.repository }}
+  cancel-in-progress: false
+
+jobs:
+  test:
+    name: pre-deploy gate
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.161.1'
+          extended: true
+
+      - name: Build
+        run: hugo --minify --gc
+
+      - name: Verify build artifacts
+        run: |
+          test -f public/index.html
+          test -f public/healthz
+          grep -q 'learn.intentsolutions.io' public/healthz
+          echo "build artifacts present"
+
+  deploy:
+    needs: test
+    uses: jeremylongshore/.github/.github/workflows/vps-deploy.yml@709a07fbebb1d51806e171204e63f5332abcb0da
+    with:
+      variant: static
+      srv-path: /srv/learn-intentsolutions
+      health-check-url: https://learn.intentsolutions.io/healthz
+      vps-tailnet-ip: 100.88.144.55
+      vps-public-ip: 167.86.106.29
+      vps-host: intentsolutions
+      vps-user: intentsolutions
+      smoke-validation: '.ok == true'
+    secrets:
+      TS_OIDC_CLIENT_ID: ${{ secrets.TS_OIDC_CLIENT_ID }}
+      TS_AUDIENCE: ${{ secrets.TS_AUDIENCE }}
+      VPS_DEPLOY_KEY: ${{ secrets.VPS_DEPLOY_KEY }}
+      VPS_HOST_KEY: ${{ secrets.VPS_HOST_KEY }}

@@ -1,0 +1,30 @@
+baseURL = "https://learn.intentsolutions.io/"
+defaultContentLanguage = "en"
+title = "Learn — Intent Solutions"
+
+disableKinds = ["taxonomy", "term"]
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[outputs]
+  home = ["HTML"]
+  section = ["HTML"]
+  page = ["HTML"]
+
+[params]
+  description = "Learning hub for Claude Code, agent-native development, and AI systems. Find the right resource in seconds — guides, plugins, blog, open source, and partner work from Jeremy Longshore."
+  author = "Jeremy Longshore"
+  ogImage = "/img/og-image.png"
+  twitterHandle = "@jeremylongshore"
+  contactEmail = "jeremy@intentsolutions.io"
+
+[params.org]
+  name = "Intent Solutions"
+  url = "https://intentsolutions.io"
+  logo = "https://intentsolutions.io/logo.png"
+
+[languages.en]
+  weight = 1
+  languageName = "English"
+  languageCode = "en-us"

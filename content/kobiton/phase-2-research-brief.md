@@ -1,12 +1,19 @@
 ---
 title: "Phase 2 Research-Backed Evidence Brief"
 date: 2026-06-09
-description: "Two interlocking claims (community-around-pain; AI-builds-skill) grounded in ~95 papers and a 6-vendor market-presence audit. The empirical case for Phase 2 architecture."
+description: "What 'vibrant community' actually means for an AI-native mobile-testing MCP — grounded in ~95 academic papers and a 6-vendor market audit."
 weight: 10
 ---
 
-# Kobiton Phase 2 — Research-Backed Evidence Brief
+## What this is
 
+I'm Jeremy Longshore (Intent Solutions). I've spent the last six weeks doing review-and-audit work on the Kobiton MCP plugin (`kobiton/automate` on GitHub) — three review cycles I'll refer to as R1, R2, and R3, which surfaced about fifty findings I'll refer to as the F1–F50 catalog. When Kobiton's VP of Product Engineering asked what a "Phase 2" of the engagement could look like — specifically *"a vibrant community focused around engineering and testers using our MCP with agentic processes"* — I wanted my answer grounded in actual research rather than vibes.
+
+This page is that research consolidation: ~95 academic papers across eight topics (developer community formation, platform economics, AI-augmented engineering practice, agentic AI in testing, tool adoption diffusion, customer-pain-to-adoption mechanics, the developer-experience measurement lineage, and DevRel effectiveness studies), plus an independent market-presence audit of the six main mobile-testing-cloud vendors. The Kobiton-specific recommendations from this work live in a separate channel; what's published here is the substrate — research notes I wanted easy to revisit and cite later.
+
+Read it as study notes. The conclusions about "vertical specialist position" and "community engineering" generalize beyond Kobiton; the Kobiton-specific framing is here because that's the engagement that prompted the research.
+
+---
 
 ## Executive summary
 

@@ -46,6 +46,11 @@ disableKinds = ["taxonomy", "term"]
   weight = 20
 
 [[menu.main]]
+  name = "Kobiton"
+  url = "/kobiton/"
+  weight = 25
+
+[[menu.main]]
   name = "AWS"
   url = "/aws/"
   weight = 30

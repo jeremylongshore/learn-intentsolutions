@@ -39,7 +39,7 @@ Two academic lineages converge on the same conclusion: feature lists do not driv
 
 The practical implication is consistent across both lineages: **a tool spreads when it visibly closes a pain that practitioners articulate themselves**, and stalls when it ships features that solve problems the marketing team named.
 
-Applied to Kobiton: the R1/R2/R3 review cycle (2026-04-27 → 2026-05-25) identified ~50 distinct findings (F1–F50) in the `automate` plugin — each one a practitioner-articulated pain captured directly from real session data. Phase 1 surfaced the pain catalog. Phase 2 is the work of converting that catalog into a distribution surface that reaches the practitioners experiencing those pains today.
+For a Kobiton-shaped engagement: the R1/R2/R3 review cycle (2026-04-27 → 2026-05-25) identified ~50 distinct findings (F1–F50) in the `automate` plugin — each one a practitioner-articulated pain captured directly from real session data. Phase 1 surfaced the pain catalog. The Phase-2-shaped question is whether to convert that catalog into a distribution surface that reaches the practitioners experiencing those pains today.
 
 ---
 
@@ -53,7 +53,7 @@ Geiger et al. 2021 (*CSCW*) reframes maintainership as **community labor, not co
 
 The implication: developer communities form when the project is solving a real practitioner pain AND the on-ramp is socially welcoming AND a small number of identifiable maintainers do the interpersonal work that keeps contributors coming back. None of these are marketing tasks.
 
-**Applied to Kobiton.** The 2026-06-09 market-presence audit captures the current community surface:
+**Where this lands for Kobiton specifically.** The 2026-06-09 market-presence audit captures the current community surface:
 
 | Surface | Kobiton presence | What the research says |
 |---|---|---|
@@ -87,7 +87,7 @@ IT Revolution's February 2026 industry analysis ("The Great Developer Divide") s
 
 The empirical literature supports the three-tier picture: AI does not replace developers — it polarizes the skill distribution. The middle and top tiers expand; the tail shrinks. A tool ecosystem that wants to be where developers spend their time over the next decade has to land in the middle and the top, where the work is review-heavy, AI-orchestration-heavy, and judgment-heavy.
 
-Applied to Kobiton: the MCP plugin already lands in the middle tier — it is an AI-orchestration surface for real-device testing. Phase 2 is the work of compounding that position with the operational depth (skills, runbooks, productized agents) that makes Kobiton *the place AI-orchestrating developers do real-device mobile testing*.
+For a Kobiton-shaped engagement: the MCP plugin already lands in the middle tier — it is an AI-orchestration surface for real-device testing. What compounds that position is the operational depth (skills, runbooks, productized agents) that makes the plugin *the place AI-orchestrating developers do real-device mobile testing*.
 
 ---
 
@@ -150,7 +150,7 @@ The three together are a community-engineering surface for a vertical specialist
 
 Every workstream is grounded in a finding from the research above. None of them depend on marketing-driven community formation, which the literature does not support. None of them are horizontal-catch-up plays against BrowserStack or LambdaTest — those vendors are competing on a different axis. All of them amplify the surfaces where Kobiton already has vertical-specialist presence (`automate` repo, Test Guild relationship, Phase 1 finding catalog) rather than starting new surfaces from zero — which the diffusion literature (Khan et al. on DevOps adoption barriers; the full TAM lineage) predicts is a losing bet.
 
-**The category is splitting. The horizontal position is taken. The vertical specialist position — Claude-native real-device mobile testing, anchored on the Test Guild practitioner audience — is structurally open. Phase 2 is the work of compounding the assets Kobiton already holds into practitioner distribution within that position.**
+**The category is splitting. The horizontal position is taken. The vertical specialist position — Claude-native real-device mobile testing, anchored on the Test Guild practitioner audience — is structurally open. The Phase-2-shaped question is how the vertical-specialist position gets converted into practitioner distribution.**
 
 ---
 

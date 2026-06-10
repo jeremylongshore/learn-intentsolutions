@@ -16,9 +16,9 @@ Two interlocking observations from a structured research pass on developer commu
 
 **(2) AI tooling builds developer skill rather than replacing it — particularly at the low end of the experience curve.** The largest field experiment to date (Cui et al. 2026, *Management Science*, N = 4,867 across Microsoft, Accenture, and an anonymous Fortune 100) finds a **26.08% (SE 10.3%) increase in completed tasks** among developers using AI tools, with **bigger productivity gains for less-experienced developers**. Noy & Zhang 2023 in *Science* (N = 453) finds a **40% time reduction, 18% quality gain, AND a reduction in inequality between workers**. The "AI replaces juniors" thesis is empirically false in the most rigorous studies available.
 
-These two observations point in the same direction for Phase 2. A 2026-06-09 market-presence audit covering six mobile-testing-cloud vendors makes the gap concrete: Kobiton sits at 9 GitHub stars on `automate` versus 141 on BrowserStack's `mcp-server`; ~0 npm packages with traction versus 11,775 weekly downloads for BrowserStack; absent from the major Selenium/Appium conference programs in 2024–2025; smallest LinkedIn presence by 30–40× across the comparator set. Where Kobiton out-punches: the Test Guild relationship is the deepest in the cohort — Automation Guild sponsor 2025 AND 2026, dedicated podcast episode (Frank Moyer + Chris Faulhaber on "Kobiton + Claude MCP: Real Device AI Testing"), Test Guild course, on-demand webinar. **No competitor has replicated this Test Guild depth.**
+These two observations point in the same direction for Phase 2. A 2026-06-09 market-presence audit covering six mobile-testing-cloud vendors makes the category split visible: **BrowserStack and LambdaTest are taking horizontal agent-native positions** across web + mobile + visual + accessibility testing surfaces (BrowserStack's `mcp-server`: 141 stars, 11,775 weekly npm downloads, dedicated AWS Marketplace SKU; LambdaTest's `agent-skills`: 308 stars in 4 months plus four in-product MCP servers). **The vertical real-device-mobile-specialist position is structurally open** — and Kobiton already holds the three assets that compound it: the deepest Test Guild relationship in the cohort (Automation Guild sponsor 2025 AND 2026, dedicated podcast episode with Frank Moyer and Chris Faulhaber, Test Guild course, on-demand webinar — no competitor has matched this depth), a Claude-native MCP plugin shipped first in the category, and a Phase 1 pain catalog captured from real session data.
 
-The empirical Phase 2 thesis is direct: **close the agent-native distribution gap by compounding the Test Guild moat.** The remainder of this brief lays out the research underneath each claim and the implications for Phase 2 architecture.
+The empirical Phase 2 thesis is direct: **convert vertical authority into practitioner distribution within mobile real-device testing.** Not chasing horizontal reach against vendors competing on a different axis. The remainder of this brief lays out the research underneath each claim and the implications for Phase 2 architecture.
 
 ---
 
@@ -98,34 +98,34 @@ A note on what is *not* in the literature: **rigorous empirical DevRel-ROI measu
 
 ---
 
-## § 5 — Phase 2 architecture implications: the gap is the opportunity
+## § 5 — Phase 2 architecture implications: owning the vertical specialist position
 
-The 2026-06-09 market-presence audit (consolidated from G2, Capterra, GitHub API, npm registry, conference programs, podcasts, LinkedIn, AWS Marketplace, and Crunchbase) surfaces a clear picture of where Kobiton sits today across the 6-vendor cohort.
+The 2026-06-09 market-presence audit (consolidated from G2, Capterra, GitHub API, npm registry, conference programs, podcasts, LinkedIn, AWS Marketplace, and Crunchbase) makes the category split visible. BrowserStack and LambdaTest have built horizontal positions: their reach metrics reflect competing across web + mobile + visual + accessibility testing surfaces simultaneously. Reading those numbers as a Kobiton "deficit" is a category error — Kobiton is not competing on the same axis. The audit data is useful because it shows *where the leaders sit* (horizontal, agent-native, generalist), and therefore where the structurally-open position is (vertical, real-device-mobile, Claude-native, specialist).
 
-### Reach metrics, side by side
+### Where the leaders sit horizontally
 
-| Metric | Kobiton | BrowserStack | LambdaTest / TestMu | Gap to leader |
-|---|---|---|---|---|
-| G2 reviews | 38 | ~2,613 | 1,855 | 50–70× |
-| Capterra reviews | 22 | 765 | (not surfaced) | 35× |
-| GitHub stars (agent-native repo) | 9 (`automate`) | 141 (`mcp-server`) | 308 (`agent-skills`) | 15–30× |
-| Weekly npm downloads (vendor total) | ~0 | 675k | 215k | unbounded |
-| LinkedIn followers | 5.4k | ~232k | ~40k | 8–40× |
-| Vendor-owned conference | none | Breakpoint 2026 | Testμ (~50k attendees) | category absence |
-| AWS Marketplace agent SKU | none | BrowserStack MCP Server SKU | none | leader-only |
-| Test Guild depth | **deepest in cohort** | moderate | moderate | Kobiton's moat |
+| Metric | Kobiton (vertical) | BrowserStack (horizontal) | LambdaTest (horizontal) |
+|---|---|---|---|
+| G2 reviews | 38 | ~2,613 | 1,855 |
+| Capterra reviews | 22 | 765 | (not surfaced) |
+| GitHub stars (agent-native repo) | 9 (`automate`) | 141 (`mcp-server`) | 308 (`agent-skills`) |
+| Weekly npm downloads (vendor total) | ~0 | 675k | 215k |
+| LinkedIn followers | 5.4k | ~232k | ~40k |
+| Vendor-owned conference | none | Breakpoint 2026 | Testμ (~50k attendees) |
+| AWS Marketplace agent SKU | none | BrowserStack MCP Server SKU | none |
+| Test Guild depth | **deepest in cohort** | moderate | moderate |
 
-The headline reads as a gap. The opportunity reads as a Phase 2 thesis.
+The horizontal leaders are spread across many testing surfaces. Their reach metrics reflect that breadth. The right read is: **the horizontal position is taken; the vertical position is open.** Test Guild depth is the only row where Kobiton leads outright — and Test Guild is precisely the surface where the mobile-real-device practitioner audience already concentrates.
 
-### The empirical case for Phase 2
+### The empirical case for the vertical specialist position
 
-Kobiton is sitting on three assets that no comparator has all three of:
+Kobiton already holds the three assets that compound a vertical specialist position no comparator can replicate at the same depth:
 
 1. A Phase 1 pain catalog (~50 findings, F1–F50) captured from real session data — the input the user-innovation literature (von Hippel; Christensen JTBD; Hankammer et al.) says drives feature adoption.
 2. The deepest podcast/sponsorship relationship in the comparator set with the most active independent voice in test automation (Joe Colantonio / Test Guild) — the community surface the OSS-community-formation literature (Geiger et al. on maintainership-as-labor; Bao et al. on social-tie retention) says compounds.
 3. A Claude-native MCP plugin that no other real-device-cloud vendor has shipped at comparable depth — the AI-orchestration surface the productivity literature (Cui et al. 2026; Noy & Zhang 2023; IT Revolution Feb 2026 three-tier framing) says is where the work is heading.
 
-The three together are a community-engineering surface. But the agent-native distribution work that compounds the surface has not been done yet. BrowserStack and LambdaTest have moved first on agent-native distribution. Kobiton has the opening to take the position in the mobile-real-device vertical specifically — where neither comparator has the same domain depth.
+The three together are a community-engineering surface for a vertical specialist position. BrowserStack and LambdaTest have moved first on horizontal agent-native distribution, but neither has the same domain depth in real-device mobile testing — that vertical is uncontested. The Phase 2 work is not horizontal catch-up; it is converting the vertical assets Kobiton already holds into practitioner distribution within the mobile-real-device-testing audience specifically.
 
 ### Phase 2 workstreams, each grounded in a research finding above
 
@@ -141,9 +141,9 @@ The three together are a community-engineering surface. But the agent-native dis
 
 ### Why this architecture is empirically defensible
 
-Every workstream is grounded in a finding from the research above. None of them depend on marketing-driven community formation, which the literature does not support. All of them amplify the surfaces where Kobiton already has presence (`automate` repo, Test Guild relationship, Phase 1 finding catalog) rather than starting new surfaces from zero — which the diffusion literature (Khan et al. on DevOps adoption barriers; the full TAM lineage) predicts is a losing bet.
+Every workstream is grounded in a finding from the research above. None of them depend on marketing-driven community formation, which the literature does not support. None of them are horizontal-catch-up plays against BrowserStack or LambdaTest — those vendors are competing on a different axis. All of them amplify the surfaces where Kobiton already has vertical-specialist presence (`automate` repo, Test Guild relationship, Phase 1 finding catalog) rather than starting new surfaces from zero — which the diffusion literature (Khan et al. on DevOps adoption barriers; the full TAM lineage) predicts is a losing bet.
 
-**The gap is real. The Test Guild moat is real. Phase 2 is the work of compounding the moat to close the gap.**
+**The category is splitting. The horizontal position is taken. The vertical specialist position — Claude-native real-device mobile testing, anchored on the Test Guild practitioner audience — is structurally open. Phase 2 is the work of compounding the assets Kobiton already holds into practitioner distribution within that position.**
 
 ---
 

@@ -1,80 +1,59 @@
 ---
 title: "The Operating Spine"
 date: 2026-06-13
-description: "How Intent Solutions organizes itself — an operating doctrine, a governed institutional memory, and a command center. Built in public."
+description: "A brief on how Intent Solutions is organized — the doctrine, the governed memory, the command center — and where it stands now."
 ---
 
-## What this is
+**A working brief, kept current — how Intent Solutions is put together and where it stands right now.**
 
-I'm Jeremy Longshore (Intent Solutions). Most small companies run on tribal knowledge: the way
-things are done lives in one person's head, the "why" behind a decision evaporates a week after
-it's made, and onboarding means interrupting whoever's busiest. I've run operations where that
-failure mode is expensive — multi-unit restaurants, a flatbed trucking authority — so I'm
-building the opposite for this company, on purpose, and writing it down here as it takes shape.
+## The idea
 
-I call it the **operating spine**: the part of a company that holds everything else upright. It
-has three pieces.
+Most small companies run on tribal knowledge: the "how" lives in one person's head and the "why"
+evaporates a week after a decision is made. Intent Solutions is built the other way — on an
+**operating spine** that holds everything else upright. Three parts:
 
-## The three pieces
+- **A doctrine** — a short, plain statement of how the company operates: the standards, what we
+  own, how we treat the people and businesses we work with. The bar, written down, so a new
+  person knows it on day one instead of guessing for a month.
+- **A governed memory** — a knowledge base that doesn't just store facts, it *governs* them.
+  Every fact is compiled in, audited, and answerable with a citation back to its source. Ask "why
+  do we do it this way" and the answer comes back with a receipt. The pattern: **compile-then-govern**.
+- **A command center** — one place that answers "what's running, where, who owns it, is it
+  healthy," plus the decision log behind it.
 
-**1. A doctrine.** A short, plain statement of how the company actually operates — the standards
-we hold, what we own, how we treat the people and the businesses we work with. Not a mission
-poster. The real thing, written the way an operator would say it, so a new person knows the bar
-on day one instead of guessing for a month.
+## Dogfooded on ourselves
 
-**2. A governed institutional memory.** A knowledge base that doesn't just store facts — it
-*governs* them. Every fact is compiled in, audited, and answerable with a citation back to its
-source. When someone asks "why do we do it this way," the answer comes back with a receipt, not
-a shrug. I think of the pattern as **compile-then-govern**: you don't dump notes into a bucket,
-you compile them into something that can be checked, and you keep an audit trail of every change.
+The governed-memory engine is something we built, and the first thing we point it at is us — our
+own doctrine, system map, and decision history compiled into the brain, with the company run off
+cited answers from it. If a tool is going to be trusted with anyone else's institutional memory,
+it should survive being trusted with our own messy version first.
 
-**3. A command center.** One place that answers "what's running, where, who owns it, is it
-healthy" — a live map of the systems plus the decision log that explains how each one got there.
+The open-source side is already proven in public: the
+[`claude-code-plugins`](https://github.com/jeremylongshore/claude-code-plugins) hub has roughly
+2,300 stars, 300+ forks, and tens of thousands of installs. The spine is a separate proof —
+running our own governed brain on our own company.
 
-## Dogfooding it on ourselves
+## The four arms
 
-The interesting part isn't the idea — plenty of people have written "write your culture down."
-The interesting part is that the governed-memory engine is something we built, and the first
-thing we point it at is *us*. We compile our own doctrine, our own system map, and our own
-decision history into the governed brain, and we run the company off cited answers from it.
+- **The practice** — vetted operators doing real implementation work for real businesses. The
+  part that delivers.
+- **Teaching in public** — what we learn on the work, taught openly: open notes and walkthroughs
+  of real builds. For operators who carry a P&L and are tired of "AI" pitches from people who've
+  never run a shift.
+- **The platform** — the open-source hub above. Credibility, free for anyone to use.
+- **The lab** — vendor-neutral evaluation and standards at
+  [labs.intentsolutions.io](https://labs.intentsolutions.io). The slow, deep, hard-to-copy part.
 
-If a tool is going to be trusted with anyone else's institutional memory, it should first survive
-being trusted with our own — the messy, real, contradictory version. So that's the order: run it
-on ourselves first, in public, and show the result.
+**The flywheel:** teaching earns trust at scale instead of one referral at a time; trust brings
+the work; the work sharpens the platform and the lab; that earns more trust. The spine keeps the
+four coherent as they grow instead of letting them sprawl into disconnected things.
 
-To be clear about proof: the thing that's already proven in public is the open-source side — the
-[`claude-code-plugins`](https://github.com/jeremylongshore/claude-code-plugins) hub has earned
-roughly 2,300 stars and 300+ forks and tens of thousands of installs from people who've never met
-me. That's the product that's already standing on its own. The spine is a *different* proof — the
-first time we run our own governed-memory engine on our own company — not a replacement for it.
+## Where it stands
 
-## The four arms it supports
+- **Platform** — live and adopted.
+- **Governed brain** — proven end-to-end on our own material; now being stood up as a persistent
+  store the team queries.
+- **Doctrine and command center** — being assembled now.
 
-The spine is how the company runs internally. Four arms hang off it:
-
-- **The practice.** Vetted operators doing real implementation work for real businesses. This is
-  the part that actually delivers.
-- **Teaching in public.** What we learn doing the work, taught openly — notes like the ones on
-  this site, and video walkthroughs of real builds. The audience is operators who carry a P&L and
-  are tired of "AI" pitches from people who've never run a shift.
-- **The platform.** The open-source hub above — the credibility that opens the door, free for
-  anyone to use.
-- **The lab.** Vendor-neutral evaluation and standards work at
-  [labs.intentsolutions.io](https://labs.intentsolutions.io) — the slow, deep part that's hardest
-  to copy.
-
-## The flywheel
-
-Teaching in public earns trust at scale instead of one referral at a time. Trust brings the work.
-The work makes the open-source platform and the lab sharper, which earns more trust. The spine
-keeps all of it coherent as it grows, instead of letting it sprawl into four disconnected things.
-
-## Where this is
-
-Early, and honest about it. The open-source platform is real and adopted. The governed brain has
-run end-to-end on our own material. The doctrine and the command center are being assembled now.
-I'm publishing the shape of it here because building it in the open is the point — if the claim is
-"we organize companies around a governed memory," the first evidence anyone should be able to see
-is that we did it to ourselves.
-
-More as it lands.
+Built in the open, because the first evidence that we organize companies around a governed memory
+should be that we did it to ourselves.

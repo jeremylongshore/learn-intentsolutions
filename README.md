@@ -28,5 +28,5 @@ curl -fsS https://learn.intentsolutions.io/healthz | jq
 
 ## Reference
 
-- VPS onboarding procedure: `intentsolutions-vps-runbook/docs/onboard-new-repo-deploy.md`
+- VPS deployment authority: `intent-os/ops/deploy/`
 - Sibling property (partner-portals): https://github.com/jeremylongshore/partner-portals

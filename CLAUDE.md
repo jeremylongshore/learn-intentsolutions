@@ -77,6 +77,6 @@ Operational rules:
 
 ## Cross-references
 
-- VPS onboarding procedure: `~/000-projects/intentsolutions-vps-runbook/docs/onboard-new-repo-deploy.md`
+- VPS deployment authority: `~/000-projects/intent-os/ops/deploy/`
 - Sibling Hugo deploy (partner-portals): `~/000-projects/partner-portals/`
 - Brand color tokens source: `~/000-projects/intent-solutions-landing/astro-site/src/styles/global.css`
